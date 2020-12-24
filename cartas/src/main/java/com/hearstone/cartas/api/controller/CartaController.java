@@ -18,7 +18,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hearstone.cartas.api.model.CartaInput;
 import com.hearstone.cartas.domain.model.Carta;
+import com.hearstone.cartas.domain.model.Classe;
+import com.hearstone.cartas.domain.model.Tipo;
 import com.hearstone.cartas.domain.repository.CartaRepository;
 import com.hearstone.cartas.domain.service.CartaService;
 
@@ -47,9 +50,9 @@ public class CartaController {
 		return ResponseEntity.notFound().build();
 	}
 	
-	@GetMapping("/nome/{nome}")
-	public ResponseEntity<Carta> buscarPorNome(@PathVariable String nome){
-		Optional<Carta> carta = cartaRepository.findByNome(nome);
+	@GetMapping("/nome")
+	public ResponseEntity<Carta> buscarPorNome(@RequestBody CartaInput cartaInput){
+		Optional<Carta> carta = cartaRepository.findByNome(cartaInput.getNome().toUpperCase());
 		
 		if(carta.isPresent()) {
 			return ResponseEntity.ok(carta.get());
@@ -57,18 +60,18 @@ public class CartaController {
 		return ResponseEntity.notFound().build();
 	}
 	
-	@GetMapping("/tipo/{nome}")
-	public ResponseEntity<Carta> buscarPorTipo(@PathVariable String tipo){
-		Optional<Carta> carta = cartaRepository.findByTipo(tipo);
+	@GetMapping("/tipo")
+	public ResponseEntity<Carta> buscarPorTipo(@RequestBody CartaInput cartaInput){
+		Optional<Carta> carta = cartaRepository.findByTipo(Tipo.valueOfByName(cartaInput.getTipo()));
 		if(carta.isPresent()) {
 			return ResponseEntity.ok(carta.get());
 		}
 		return ResponseEntity.notFound().build();
 	}
 	
-	@GetMapping("/classe/{nome}")
-	public ResponseEntity<Carta> buscarPorClasse(@PathVariable String classe){
-		Optional<Carta> carta = cartaRepository.findByTipo(classe);
+	@GetMapping("/classe")
+	public ResponseEntity<Carta> buscarPorClasse(@RequestBody CartaInput cartaInput){
+		Optional<Carta> carta = cartaRepository.findByClasse(Classe.valueOfByName(cartaInput.getClasse()));
 		if(carta.isPresent()) {
 			return ResponseEntity.ok(carta.get());
 		}

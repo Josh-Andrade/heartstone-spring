@@ -6,5 +6,9 @@ public enum Classe {
 	PALADINO,
 	CACADOR,
 	DRUIDA,
-	QUALQUER
+	QUALQUER;
+	
+	public static Classe valueOfByName(String name) {
+		return valueOf(name.toUpperCase());
+	}
 }
