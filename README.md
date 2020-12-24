@@ -7,7 +7,6 @@ siga os passos a seguir para rodar a API usando o Maven
 
 ![spring-run](https://user-images.githubusercontent.com/45312862/103104471-3651a300-4606-11eb-93ad-9a76c63318cf.jpg)
 
-end points
 
 ![atualizar](https://user-images.githubusercontent.com/45312862/103107935-d49f3200-4621-11eb-82eb-4864254c75d6.jpg)
 ![cadastrar](https://user-images.githubusercontent.com/45312862/103107938-d5d05f00-4621-11eb-9ef8-b1ce915801a7.jpg)
