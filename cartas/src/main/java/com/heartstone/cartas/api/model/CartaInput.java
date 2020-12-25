@@ -1,4 +1,4 @@
-package com.hearstone.cartas.api.model;
+package com.heartstone.cartas.api.model;
 
 
 public class CartaInput {

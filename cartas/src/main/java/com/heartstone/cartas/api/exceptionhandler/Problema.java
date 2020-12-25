@@ -1,4 +1,4 @@
-package com.hearstone.cartas.api.exceptionhandler;
+package com.heartstone.cartas.api.exceptionhandler;
 
 import java.time.OffsetDateTime;
 import java.util.List;

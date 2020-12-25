@@ -1,4 +1,4 @@
-package com.hearstone.cartas.api.exceptionhandler;
+package com.heartstone.cartas.api.exceptionhandler;
 
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
@@ -17,9 +17,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-
-import com.hearstone.cartas.domain.exception.BaralhoException;
-import com.hearstone.cartas.domain.exception.EntidadeNaoEncontradaException;
+import com.heartstone.cartas.domain.exception.BaralhoException;
+import com.heartstone.cartas.domain.exception.EntidadeNaoEncontradaException;
 
 
 @ControllerAdvice

@@ -1,4 +1,4 @@
-package com.hearstone.cartas.domain.exception;
+package com.heartstone.cartas.domain.exception;
 
 public class BaralhoException extends RuntimeException {
 	
