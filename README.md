@@ -1,4 +1,4 @@
-Crie um banco no postgreSQL e adicione a URL, user e password no arquivo application.properties que está na pasta resources;
+Crie um banco no postgreSQL (Versão utilizada foi a 9.6) e adicione a URL, user e password no arquivo application.properties que está na pasta resources;
 
 ![application](https://user-images.githubusercontent.com/45312862/103104324-3b622280-4605-11eb-9a3e-7321996c9ba2.jpg)
 
@@ -8,11 +8,8 @@ siga os passos a seguir para rodar a API usando o Maven
 ![spring-run](https://user-images.githubusercontent.com/45312862/103104471-3651a300-4606-11eb-93ad-9a76c63318cf.jpg)
 
 
-![atualizar](https://user-images.githubusercontent.com/45312862/103107935-d49f3200-4621-11eb-82eb-4864254c75d6.jpg)
-![cadastrar](https://user-images.githubusercontent.com/45312862/103107938-d5d05f00-4621-11eb-9ef8-b1ce915801a7.jpg)
-![deletar](https://user-images.githubusercontent.com/45312862/103107939-d7018c00-4621-11eb-9d11-089db98a5568.jpg)
-![listarPorClasse](https://user-images.githubusercontent.com/45312862/103107940-d79a2280-4621-11eb-82d3-f5aed420e36f.jpg)
-![listarPorId](https://user-images.githubusercontent.com/45312862/103107943-d8cb4f80-4621-11eb-8c28-4e2cc1b82eb7.jpg)
-![listarPorNome](https://user-images.githubusercontent.com/45312862/103107944-d9fc7c80-4621-11eb-8678-8124d1dba931.jpg)
-![listarPorTipo](https://user-images.githubusercontent.com/45312862/103107946-db2da980-4621-11eb-8211-7df0ee6262b1.jpg)
-![listarTodas](https://user-images.githubusercontent.com/45312862/103107950-dc5ed680-4621-11eb-8847-18dde7bcfb6b.jpg)
+![atualizar](https://user-images.githubusercontent.com/45312862/103141099-28675500-46ce-11eb-8f55-aa5de5d16535.jpg)
+![cadastro](https://user-images.githubusercontent.com/45312862/103141100-28ffeb80-46ce-11eb-84a1-1ceffa17273c.jpg)
+![consultarPorId](https://user-images.githubusercontent.com/45312862/103141102-28ffeb80-46ce-11eb-9aa1-36d755b24b20.jpg)
+![deletar](https://user-images.githubusercontent.com/45312862/103141103-29988200-46ce-11eb-8a4e-f0e49f610617.jpg)
+![listagem](https://user-images.githubusercontent.com/45312862/103141105-29988200-46ce-11eb-80fd-39c140215864.jpg)
