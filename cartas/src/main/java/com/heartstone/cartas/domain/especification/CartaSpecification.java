@@ -24,7 +24,7 @@ public class CartaSpecification {
 
     private static Specification<Carta> comNome(String nome) {
         return (root, query, criteriaBuilder)
-                -> criteriaBuilder.like(criteriaBuilder.upper(root.get("nome")), nome.toUpperCase());
+                -> criteriaBuilder.like(criteriaBuilder.upper(root.get("nome")), "%" + nome.toUpperCase() + "%");
     }
 
     private static Specification<Carta> comTipo(String tipo) {
